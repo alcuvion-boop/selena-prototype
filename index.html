@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#11131c" />
+    <title>Селена — твой тихий ритуал</title>
+    <meta
+      name="description"
+      content="Карта дня, символические расклады и личный дневник. Интерактивный прототип."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2311131c'/%3E%3Cpath d='M22 6a11 11 0 1 0 4 17A11 11 0 0 1 22 6' fill='%23d3bb86'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#today"
+          ><span class="brand-mark">☾</span> селена<span class="brand-dot"
+            >✧</span
+          ></a
+        >
+        <p class="brand-caption">ТВОЙ ТИХИЙ РИТУАЛ</p>
+        <nav aria-label="Основное меню" id="navigation"></nav>
+        <div class="sidebar-bottom">
+          <span class="tiny-star">✧</span>
+          <p>Ответы начинаются<br />с внимания к себе.</p>
+          <span class="prototype">ПРОТОТИП · 01</span>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <span id="section-label">Твоё пространство</span
+          ><span class="top-right"
+            ><span class="demo-badge">Демо без ИИ</span
+            ><button
+              class="avatar"
+              data-action="profile"
+              aria-label="Открыть профиль"
+            >
+              Я
+            </button></span
+          >
+        </header>
+        <main id="main"></main>
+        <footer>
+          Символические интерпретации для саморефлексии, не предсказание
+          будущего.
+        </footer>
+      </div>
+    </div>
+    <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

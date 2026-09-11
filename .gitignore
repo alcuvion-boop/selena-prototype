@@ -1,0 +1,6 @@
+.netlify/
+.grok/
+selena-prototype.zip
+.DS_Store
+*.log
+node_modules/
